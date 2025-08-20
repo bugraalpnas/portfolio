@@ -298,19 +298,25 @@ export default function Home() {
             className="my-14 flex max-w-6xl flex-col justify-start space-y-10"
           >
             <h2 className="py-16  pb-2 text-3xl font-light leading-normal tracking-tighter text-foreground xl:text-[40px]">
-              I&apos;m an experienced full-stack developer proficient in{" "}
-              <Link
-                href="https://create.t3.gg/"
-                target="_blank"
-                className="underline"
-              >
-                TypeScript, Tailwind, and Next.js
-              </Link>{" "}
-              since 2021. My experience spans from startups to mid-sized
-              companies, where I&apos;ve been instrumental in the entire product
-              design process; from ideation and wireframing, through
-              prototyping, to the delivery of the final product, all while
-              efficiently collaborating with cross-functional teams.
+            I’m a Data Specialist with expertise in{" "}
+            <Link
+              href="https://github.com/bugraalpas"
+              target="_blank"
+              className="underline"
+            >
+              SQL, Python, and Power BI/DAX
+            </Link>{" "}
+            since 2020. I have experience working on both project-based assignments and
+            with some of Turkey’s largest companies, delivering insights that drive business decisions. {" "}
+            <Link
+              href="https://www.linkedin.com/in/bugraalpnas/"
+              target="_blank"
+              className="underline"
+            >
+              LinkedIn
+            </Link>
+            My work focuses on turning complex data into actionable analytics, creating impactful dashboards, 
+            and collaborating effectively across teams to optimize performance.
             </h2>
             <div className="grid grid-cols-2 gap-8 xl:grid-cols-3">
               {aboutStats.map((stat) => (
