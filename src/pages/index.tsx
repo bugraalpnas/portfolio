@@ -313,9 +313,9 @@ export default function Home() {
               target="_blank"
               className="underline"
             >
-              LinkedIn
+            My work
             </Link>
-            My work focuses on turning complex data into actionable analytics, creating impactful dashboards, 
+             focuses on turning complex data into actionable analytics, creating impactful dashboards, 
             and collaborating effectively across teams to optimize performance.
             </h2>
             <div className="grid grid-cols-2 gap-8 xl:grid-cols-3">
