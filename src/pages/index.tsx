@@ -417,31 +417,6 @@ export default function Home() {
           </div>
         </section>
 
-      {/* Medium */}
-      <section id="blog" className="my-20 max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold mb-10">My Medium Articles</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {posts.map((post, index) => (
-              <Card key={index}>
-                <CardHeader>
-                  <CardTitle>{post.title}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p>{new Date(post.pubDate).toLocaleDateString()}</p>
-                  <a
-                    href={post.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-500 hover:underline"
-                  >
-                    Read more
-                  </a>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </section>
-        
         {/* Services */}
         <section id="services" data-scroll-section>
           <div
