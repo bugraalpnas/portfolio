@@ -74,13 +74,13 @@ const services = [
   service: "Data Analysis",
   description:
     "Transforming complex datasets into actionable business insights through SQL, Python, and advanced analytics.",
-  icon: ChartBar,
+  icon: BarChart,
 },
 {
   service: "Business Intelligence & Power BI",
   description:
     "Designing and deploying interactive dashboards and reports in Power BI to visualize KPIs and support decision-making.",
-  icon: ChartArea,
+  icon: AreaChart,
 },
 {
   service: "Data Warehousing",
