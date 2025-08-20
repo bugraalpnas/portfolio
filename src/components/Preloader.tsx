@@ -44,11 +44,13 @@ export default function Preloader() {
   }, []);
 
   useEffect(() => {
-    if (index === words.length - 1) return;
-    const timeout = setTimeout(() => {
-      setIndex(index + 1);
-    }, 600); // tüm kelimeler eşit sürede geçecek
-    return () => clearTimeout(timeout);
+    if (index == words.length - 1) return;
+    setTimeout(
+      () => {
+        setIndex(index + 1);
+      },
+      index == 0 ? 1000 : 150,
+    );
   }, [index]);
 
   const initialPath = `M0 0 L${dimension.width} 0 L${dimension.width} ${dimension.height} Q${dimension.width / 2} ${dimension.height + 300} 0 ${dimension.height}  L0 0`;
@@ -79,7 +81,11 @@ export default function Preloader() {
             {words[index]}
           </motion.p>
           <svg>
-            <motion.path variants={curve} initial="initial" exit="exit"></motion.path>
+            <motion.path
+              variants={curve}
+              initial="initial"
+              exit="exit"
+            ></motion.path>
           </svg>
         </>
       )}
