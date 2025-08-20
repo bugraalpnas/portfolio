@@ -30,7 +30,6 @@ import {
 } from "@/components/ui/carousel";
 import VanillaTilt from "vanilla-tilt";
 import { motion } from "framer-motion";
-import MediumFeed from "@/components/mediumFeed";
 
 const aboutStats = [
   { label: "Years of experience", value: "5+" },
