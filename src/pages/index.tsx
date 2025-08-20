@@ -218,9 +218,10 @@ export default function Home() {
               data-scroll-speed=".09"
               className="flex flex-row items-center space-x-1.5"
             >
-              <span className={styles.pill}>next.js</span>
-              <span className={styles.pill}>tailwindcss</span>
-              <span className={styles.pill}>typescript</span>
+              <span className={styles.pill}>sql</span>
+              <span className={styles.pill}>python</span>
+              <span className={styles.pill}>powerbi</span>
+              <span className={styles.pill}>dax</span>
             </div>
             <div>
               <h1
