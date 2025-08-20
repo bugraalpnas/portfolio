@@ -67,36 +67,60 @@ const projects = [
 ];
 
 const services = [
-  {
-    service: "Frontend Development",
-    description:
-      "Creating stellar user interfaces and web experiences using the latest technologies.",
-    icon: Code2,
-  },
-  {
-    service: "UX Design",
-    description:
-      "Building intuitive, user-centric designs that drive engagement and conversion.",
-    icon: Frame,
-  },
-  {
-    service: "SEO Optimization",
-    description:
-      "Enhancing your website's visibility in search engines for increased organic traffic.",
-    icon: SearchCheck,
-  },
-  {
-    service: "Responsive Design",
-    description:
-      "Designing websites that look and perform equally well on all devices and screen sizes.",
-    icon: MonitorSmartphone,
-  },
-  {
-    service: "Backend Development",
-    description:
-      "Developing robust, scalable server-side logic for a wide range of web applications.",
-    icon: Eye,
-  },
+ {
+  service: "Data Analysis",
+  description:
+    "Transforming complex datasets into actionable business insights through SQL, Python, and advanced analytics.",
+  icon: BarChart3,
+},
+{
+  service: "Business Intelligence & Power BI",
+  description:
+    "Designing and deploying interactive dashboards and reports in Power BI to visualize KPIs and support decision-making.",
+  icon: LineChart,
+},
+{
+  service: "Data Warehousing",
+  description:
+    "Modeling, optimizing, and managing scalable data warehouse solutions for reliable analytics.",
+  icon: Database,
+},
+{
+  service: "ETL & Automation",
+  description:
+    "Engineering automated pipelines with Python and Linux cron jobs for efficient data extraction, transformation, and loading.",
+  icon: Workflow,
+},
+{
+  service: "SQL Development",
+  description:
+    "Writing and optimizing SQL queries, stored procedures, and database structures for high-performance data operations.",
+  icon: Code2,
+},
+{
+  service: "KPI & Performance Tracking",
+  description:
+    "Defining and tracking business-critical metrics to measure growth, improve performance, and drive strategic decisions.",
+  icon: TrendingUp,
+},
+{
+  service: "API & Data Integration",
+  description:
+    "Integrating multiple data sources and APIs into unified BI systems for seamless reporting and analytics.",
+  icon: Share2,
+},
+{
+  service: "Data Cleaning & Preparation",
+  description:
+    "Transforming raw, inconsistent datasets into clean, structured, and analysis-ready formats.",
+  icon: Filter,
+},
+{
+  service: "Cloud Analytics",
+  description:
+    "Implementing cloud-based analytics solutions and integrations on Azure and AWS.",
+  icon: Cloud,
+},
 ];
 
 export default function Home() {
