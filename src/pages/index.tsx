@@ -12,6 +12,7 @@ import {
   Share2,
   Filter,
   Cloud,
+  ChevronRight,
 } from "lucide-react";
 import { TriangleDownIcon } from "@radix-ui/react-icons";
 import Spline from "@splinetool/react-spline";
