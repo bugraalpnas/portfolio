@@ -4,7 +4,7 @@ import styles from "@/styles/Home.module.css";
 import { Button } from "@/components/ui/button";
 import {
   BarChart,
-  ChartArea,
+  AreaChart,
   Database,
   Workflow,
   Code2,
