@@ -28,8 +28,8 @@ import VanillaTilt from "vanilla-tilt";
 import { motion } from "framer-motion";
 
 const aboutStats = [
-  { label: "Years of experience", value: "3+" },
-  { label: "Technologies mastered", value: "5+" },
+  { label: "Years of experience", value: "5+" },
+  { label: "Technologies mastered", value: "8+" },
   { label: "Companies worked with", value: "15+" },
 ];
 
@@ -206,7 +206,7 @@ export default function Home() {
                   <br />
                 </span>
                 <span className="clash-grotesk text-gradient text-6xl 2xl:text-8xl">
-                  WendoJ.
+                  Bugra Alp.
                 </span>
               </h1>
               <p
@@ -215,8 +215,8 @@ export default function Home() {
                 data-scroll-speed=".06"
                 className="mt-1 max-w-lg tracking-tight text-muted-foreground 2xl:text-xl"
               >
-                An experienced full-stack website developer with a passion for
-                crafting unique digital experiences.
+                An experienced data specialist with a passion for
+                crafting unique data.
               </p>
             </div>
             <span
