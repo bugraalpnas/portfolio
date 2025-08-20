@@ -3,7 +3,7 @@ import { useEffect, useRef, Suspense, useState } from "react";
 import styles from "@/styles/Home.module.css";
 import { Button } from "@/components/ui/button";
 import {
-  ChartBar,
+  BarChart,
   ChartArea,
   Database,
   Workflow,
