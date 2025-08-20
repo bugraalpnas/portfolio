@@ -24,6 +24,7 @@ const slideUp = {
 };
 
 const words = [
+  "Merhaba",
   "Hello",
   "Bonjour",
   "Ciao",
