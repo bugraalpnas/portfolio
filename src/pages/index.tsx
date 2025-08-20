@@ -3,12 +3,15 @@ import { useEffect, useRef, Suspense, useState } from "react";
 import styles from "@/styles/Home.module.css";
 import { Button } from "@/components/ui/button";
 import {
-  ChevronRight,
+  ChartBar,
+  ChartArea,
+  Database,
+  Workflow,
   Code2,
-  Frame,
-  SearchCheck,
-  Eye,
-  MonitorSmartphone,
+  TrendingUp,
+  Share2,
+  Filter,
+  Cloud,
 } from "lucide-react";
 import { TriangleDownIcon } from "@radix-ui/react-icons";
 import Spline from "@splinetool/react-spline";
@@ -71,13 +74,13 @@ const services = [
   service: "Data Analysis",
   description:
     "Transforming complex datasets into actionable business insights through SQL, Python, and advanced analytics.",
-  icon: BarChart3,
+  icon: ChartBar,
 },
 {
   service: "Business Intelligence & Power BI",
   description:
     "Designing and deploying interactive dashboards and reports in Power BI to visualize KPIs and support decision-making.",
-  icon: LineChart,
+  icon: ChartArea,
 },
 {
   service: "Data Warehousing",
