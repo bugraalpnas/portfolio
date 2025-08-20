@@ -29,7 +29,7 @@ export default function Footer() {
           <p className="text-xs text-muted-foreground">
             Made with ❤️ by{" "}
             <Link
-              href="https://github.com/wendoj"
+              href="https://github.com/bugraalpnas"
               target="_blank"
               passHref
               className="text-foreground transition hover:text-primary"
@@ -44,7 +44,7 @@ export default function Footer() {
           </span>
         </span>
         <Link
-          href="mailto:wendoj@proton.me"
+          href="mailto:bugraalpnas@gmail.com"
           passHref
           className="text-xs text-muted-foreground hover:text-foreground"
         >
