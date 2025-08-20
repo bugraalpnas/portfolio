@@ -4,23 +4,13 @@ import styles from "@/styles/Container.module.css";
 
 /* Framer motion variants */
 const opacity = {
-  initial: {
-    opacity: 0,
-  },
-  enter: {
-    opacity: 0.75,
-    transition: { duration: 1, delay: 0.2 },
-  },
+  initial: { opacity: 0 },
+  enter: { opacity: 0.75, transition: { duration: 0.5 } }, // süreyi 0.5s yaptık, hızlı ama akıcı
 };
 
 const slideUp = {
-  initial: {
-    top: 0,
-  },
-  exit: {
-    top: "-100vh",
-    transition: { duration: 0.8, ease: [0.76, 0, 0.24, 1], delay: 0.2 },
-  },
+  initial: { top: 0 },
+  exit: { top: "-100vh", transition: { duration: 0.8, ease: [0.76, 0, 0.24, 1] } },
 };
 
 const words = [
@@ -43,28 +33,20 @@ export default function Preloader() {
     setDimension({ width: window.innerWidth, height: window.innerHeight });
   }, []);
 
+  // Kelimeleri eşit süre ile değiştir
   useEffect(() => {
-    if (index == words.length - 1) return;
-    setTimeout(
-      () => {
-        setIndex(index + 1);
-      },
-      index == 0 ? 1000 : 150,
-    );
-  }, [index]);
+    const interval = setInterval(() => {
+      setIndex((prev) => (prev + 1) % words.length);
+    }, 600); // her kelimeyi 600ms göster, istersen 500-700 arası deneyebilirsin
+    return () => clearInterval(interval);
+  }, []);
 
-  const initialPath = `M0 0 L${dimension.width} 0 L${dimension.width} ${dimension.height} Q${dimension.width / 2} ${dimension.height + 300} 0 ${dimension.height}  L0 0`;
-  const targetPath = `M0 0 L${dimension.width} 0 L${dimension.width} ${dimension.height} Q${dimension.width / 2} ${dimension.height} 0 ${dimension.height}  L0 0`;
+  const initialPath = `M0 0 L${dimension.width} 0 L${dimension.width} ${dimension.height} Q${dimension.width / 2} ${dimension.height + 300} 0 ${dimension.height} L0 0`;
+  const targetPath = `M0 0 L${dimension.width} 0 L${dimension.width} ${dimension.height} Q${dimension.width / 2} ${dimension.height} 0 ${dimension.height} L0 0`;
 
   const curve = {
-    initial: {
-      d: initialPath,
-      transition: { duration: 0.7, ease: [0.76, 0, 0.24, 1] },
-    },
-    exit: {
-      d: targetPath,
-      transition: { duration: 0.7, ease: [0.76, 0, 0.24, 1], delay: 0.3 },
-    },
+    initial: { d: initialPath, transition: { duration: 0.7, ease: [0.76, 0, 0.24, 1] } },
+    exit: { d: targetPath, transition: { duration: 0.7, ease: [0.76, 0, 0.24, 1], delay: 0.3 } },
   };
 
   return (
@@ -76,16 +58,11 @@ export default function Preloader() {
     >
       {dimension.width > 0 && (
         <>
-          <motion.p variants={opacity} initial="initial" animate="enter">
-            <span></span>
+          <motion.p key={index} variants={opacity} initial="initial" animate="enter">
             {words[index]}
           </motion.p>
           <svg>
-            <motion.path
-              variants={curve}
-              initial="initial"
-              exit="exit"
-            ></motion.path>
+            <motion.path variants={curve} initial="initial" exit="exit"></motion.path>
           </svg>
         </>
       )}
